@@ -1,6 +1,5 @@
 <template>
-
-<b-container>
+<b-container>  
   <b-row>
     <b-col md="3"></b-col>
     <b-col md="6">
@@ -11,12 +10,10 @@
       </div>
     </b-col>
     <b-col md="3"></b-col>
-  </b-row>
+  </b-row>  
 </b-container>
-
 </template>
-
-<script>    
+<script>
 </script>
 
 <style>
