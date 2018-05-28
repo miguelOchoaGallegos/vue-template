@@ -148,8 +148,7 @@ export default {
 <style>
 
 .ev-login {
-  margin-top: 100px;
-  /*background-color: #c5daf1;  */
+  margin-top: 100px;  
 }
 
 </style>
