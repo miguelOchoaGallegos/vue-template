@@ -1,5 +1,5 @@
 <template>
-<b-container class="ev-login" fluid>
+ <b-container class="ev-login" fluid>
 <b-row>
 <b-col md="6" offset-md="3">
     <!--
@@ -27,8 +27,11 @@
 
 <b-row>
 <b-col md="6" offset-md="4">
- <b-card title="Bienvenido" sub-title=""
- img-src="https://lorempixel.com/600/300/food/3/" 
+ <b-card 
+ title="Bienvenido" 
+ sub-title=""
+ border-variant="dark"  
+ img-src="./../assets/home-bg.jpg"
           img-alt="Image"
           img-top
           tag="article"
@@ -71,11 +74,8 @@
 </b-col>
 </b-row>
 <b-row>
-<b-col md="6" offset-md="4" text-color="danger">
-
+<b-col md="4" offset-md="4" text-color="danger">
 <b-alert variant="danger" :show="errorLogin.show">{{errorLogin.msg}}</b-alert>
-
-
 </b-col>
 </b-row>
 </b-container>
@@ -91,6 +91,7 @@ import axios from 'axios';
 //import {RotateSquare2} from 'vue-loading-spinner'
 //import Spinner from 'vue-simple-spinner'
 import loading from 'vue-full-loading'
+
 
 export default {
   name: 'login',  
@@ -113,7 +114,6 @@ export default {
         show:false,
         msg: ''      
       }
-      
     }
   },
   mounted() {    
@@ -138,8 +138,7 @@ export default {
        this.spinner.show = false; 
        this.errorLogin.show= true;
        this.errorLogin.msg = response.data.mensaje;
-    });
-    
+    });   
 
     }
   }

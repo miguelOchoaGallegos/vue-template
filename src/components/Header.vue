@@ -7,15 +7,15 @@
 <b-row>
 <b-button @click="logout">cerrar sesion</b-button>
 </b-row>
-</b-container>
+</b-container>  |  variant="danger" type="dark"
 -->
 
 <div>
-<b-navbar toggleable="md" type="dark" variant="primary">
+<b-navbar toggleable="md" class="head">
 
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-  <b-navbar-brand href="#">app</b-navbar-brand>
+  <b-navbar-brand href="#" class="title-app">Portal Empleado</b-navbar-brand>
 
   <b-collapse is-nav id="nav_collapse">
 
@@ -37,10 +37,10 @@
       <b-nav-item-dropdown right>
         <!-- Using button-content slot -->
         <template slot="button-content">
-          <em> <icon name="user"></icon> Usuario</em>
+          <span class="title-app"> <icon name="user"></icon> Usuario</span>
         </template>
-        <b-dropdown-item href="#">Perfil de usuario</b-dropdown-item>
-        <b-dropdown-item @click="logout">Cerrar sesión</b-dropdown-item>
+        <b-dropdown-item href="#" class="sub-title-app">Perfil de usuario</b-dropdown-item>
+        <b-dropdown-item @click="logout" class="sub-title-app">Cerrar sesión</b-dropdown-item>
       </b-nav-item-dropdown>
     </b-navbar-nav>
 
@@ -66,4 +66,20 @@ export default {
 </script>
 
 <style>
+.head {
+  background-color :  #f2f2f2;  
+   height :  50px;
+}
+
+.title-app {
+  font-family : DINRegular,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;  
+  color : #7d0063 !important;
+}
+
+.sub-title-app {
+  font-family : DINRegular,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;  
+  color : #8c8c8c !important;
+  font-size:12px;
+}
+
 </style>

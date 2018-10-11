@@ -7,14 +7,14 @@ import store from './store'
  *    and maybe nginx in production (cleaner calls and avoids CORS issues).
  */
 //const LOGIN_URL = '/auth'
-const LOGIN_URL = 'http://localhost:9000/profuturo-rest-admffpp/api/auth/login'
+const LOGIN_URL = 'http://localhost:8080/portal-empleado-rest/api/auth/login'
 
 /**
  * @var{string} REFRESH_TOKEN_URL The endpoint for refreshing an access_token. This endpoint should be proxied
  *    by Webpack dev server and maybe nginx in production (cleaner calls and avoids CORS issues).
  */
 //const REFRESH_TOKEN_URL = '/auth'
-const REFRESH_TOKEN_URL = 'http://localhost:9000/profuturo-rest-admffpp/api/auth/token'
+const REFRESH_TOKEN_URL = 'http://localhost:8080/portal-empleado-rest/api/auth/token'
 
 /**
  * TODO: This is here to demonstrate what an OAuth server will want. Ultimately you don't want to
